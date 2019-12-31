@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div> Yay! </div>
+    <HelloWorld msg="Nice!" />
+
+    <router-link :to="{ name:'HelloWorld', params:{ msg:'YoYoYo!'} }">Home</router-link>
+    <router-link to="/one">First</router-link>
+    <router-link to="/two">Second</router-link>
+
+    <div> =============== Below Only ! =============== </div>
+    <router-view></router-view>  
+    <div> =============== Above Only ! =============== </div>  
+
   </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld: HelloWorld
   }
 }
 </script>
@@ -24,5 +34,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+a {
+  color: #42b983;
+  margin-left: 1em;
+  margin-left: 1em;
 }
 </style>
