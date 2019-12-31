@@ -1,4 +1,14 @@
-# two_route
+# VueJS Study App
+
+The basic commands are as below
+
+```
+npm install -g @vue/cli
+vue create myApp
+npm install vue-router
+npm run serve
+```
+
 
 ## Project setup
 ```
