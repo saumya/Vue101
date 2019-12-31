@@ -1,4 +1,4 @@
-# VueJS Study App
+# VueJS Study App ( Vue 2 )
 
 The basic commands are as below
 
